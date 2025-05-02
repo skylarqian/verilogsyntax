@@ -10,6 +10,7 @@
   "categories": [
     "Programming Languages"
   ],
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/skylarqian/verilogsyntax.git"
