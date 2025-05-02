@@ -1,0 +1,51 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Verilog",
+	"patterns": [
+		{
+			"name": "keyword.control.verilog",
+			"match": "\\b(if|else|for|case)\\b"
+		},
+		{
+			"name": "comment.line.double-slash",
+			"match": "//.*$"
+		},
+		{
+			"name": "comment.block.verilog",
+			"begin": "/\\*",
+			"end": "\\*/"
+		},
+		{
+			"name": "constant.numeric.verilog",
+			"match": "\\b\\d+'[bhd][0-9a-fA-Fxz]+\\b|\\b\\d+\\b"
+		},
+		{
+			"name": "storage.type.verilog",
+			"match": "\\b(reg|wire|genvar)\\b"
+		},
+		{
+			"name": "entity.name.function.verilog",
+			"match": "\\bassign\\b"
+		},
+		{
+			"name": "storage.modifier.input.verilog",
+			"match": "\\binput\\b"
+		},
+		{
+			"name": "storage.modifier.output.verilog",
+			"match": "\\boutput\\b"
+		},
+		{
+			"name": "variable.parameter.verilog",
+			"match": "\\b(parameter)\\b",
+			"captures": {
+				"1": {
+					"name": "variable.other.parameter.verilog"
+				}
+			}
+		}
+	],
+	"repository": {
+	},
+	"scopeName": "source.verilog"
+}

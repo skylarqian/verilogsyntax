@@ -1,0 +1,26 @@
+{
+  "name": "verilogsyntax",
+  "displayName": "verilogcodeextension",
+  "description": "verilog syntax extension yippie",
+  "version": "0.0.1",
+  "publisher": "Skibbidi",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "verilog",
+      "aliases": ["Verilog", "verilog"],
+      "extensions": [".v",".sv"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "verilog",
+      "scopeName": "source.verilog",
+      "path": "./syntaxes/verilog.tmLanguage.json"
+    }]
+  }
+}
