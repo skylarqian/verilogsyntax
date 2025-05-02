@@ -1,6 +1,6 @@
 {
   "name": "verilogsyntax",
-  "displayName": "verilogcodeextension",
+  "displayName": "Verilog Syntax Helper",
   "description": "verilog syntax extension yippie",
   "version": "0.0.1",
   "publisher": "Skibbidi",
@@ -10,6 +10,10 @@
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/skylarqian/verilogsyntax.git"
+  },
   "contributes": {
     "languages": [{
       "id": "verilog",
